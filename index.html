@@ -1,92 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ahmad Albukhari - Programming Profile</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Modern Interaktif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Intro Animation Overlay -->
+    <div id="intro">
+        <video autoplay loop muted class="background-video">
+            <source src="abstract-aesthetic-moewalls-com.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="particle" id="particle1"></div>
+        <div class="particle" id="particle2"></div>
+        <div class="particle" id="particle3"></div>
+        <div class="logo">
+            <h1 class="animated-title">Loading</h1>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-percentage">0%</div>
+        </div>
+        <button id="start-btn" class="btn start-btn" style="display: none;">Start</button>
+    </div>
+
+    <!-- Header Trigger Area -->
+    <div class="header-trigger"></div>
+
+    <!-- Main Content -->
     <header>
-        <h1>Ahmad Albukhari</h1>
+        <h1 class="main-title"></h1>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#features">Sklill</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Selamat datang di website profile ku! Namaku Ahmad Al Bukhari usiaku 16 th, aku lahir di Batam,30 desember 2009. Sekarang aku sekolah di SMKn 7 Batam, Aku mengambil konsentrasi keahlian rpl ( atau jurusan rpl ) kedepannya mungkin aku bakal belajar lebih banyak tentang coding, Sekarang aku sudah membuat website ini dan kedepannya mungkin akan lebih banyak lagi portofolio yang aku ku publish software engineer adalah pekerjaan yang bisa saya ambil kedepannya, itu saja informasi mengenai diri saya.</p>
-    </section>
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <h1>Web profile</h1>
+                <p>berisi pengenalan diri saya</p>
+                <button id="interact-btn" class="btn">click for changes the colors</button>
+            </div>
+            <div class="home-photo">
+                <video autoplay loop muted style="width:100%; height:auto; border-radius:10px;">
+                    <source src="abstract-aesthetic-moewalls-com.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <span>HTML</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 19%;"></div>
-            </div>
-            <span class="percent">19%</span>
-        </div>
-        <div class="skill">
-            <span>CSS</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 10%;"></div>
-            </div>
-            <span class="percent">10%</span>
-        </div>
-        <div class="skill">
-            <span>JavaScript</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 2%;"></div>
-            </div>
-            <span class="percent">2%</span>
-        </div>
-        <div class="skill">
-            <span>Problem Solving</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 4%;"></div>
-            </div>
-            <span class="percent">4%</span>
-        </div>
-        <div class="skill">
-            <span>Creativity</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 11%;"></div>
-            </div>
-            <span class="percent">15%</span>
-        </div>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="biodata-container">
+                <div class="biodata-item">
+                    <h3>👤 Personal Information</h3>
+                    <ul>
+                        <li><strong>Nama Lengkap:</strong> Ahmad Al Bukhari</li>
+                        <li><strong>Tempat, Tanggal Lahir:</strong> Batam, 30 Desember 2009</li>
+                        <li><strong>Umur:</strong> 16 tahun</li>
+                        <li><strong>Jenis Kelamin:</strong> Laki-laki</li>
+                        <li><strong>Agama:</strong> Islam</li>
+                        <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+                    </ul>
+                </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
-    </section>
+                <div class="biodata-item">
+                    <h3>🎓 Education</h3>
+                    <ul>
+                        <li><strong>Sekolah:</strong> SMK Negeri 7 Batam</li>
+                        <li><strong>Jurusan:</strong> Rekayasa Perangkat Lunak (RPL)</li>
+                        <li><strong>Kelas:</strong> X RPL 1</li>
+                        <li><strong>Tahun Masuk:</strong> 2025</li>
+                    </ul>
+                </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/ahmdal_bkhri" target="_blank">@ahmadal_bkhri</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/87783010882" target="_blank">+62 877 8301 0882</a></p>
-            <p><strong>Email:</strong> <a href="mailto:ahmadalbukhari3009@gmail.com">ahmadalbukhari3009@gmail.com</a></p>
-            <p><strong>Address:</strong> Bengkong, Batam, Kepulauan Riau, Indonesia</p>
-        </div>
-    </section>
+                <div class="biodata-item">
+                    <h3>💻 Skills & Interests</h3>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Web Development:</strong> Frontend Development</li>
+                        <li><strong>Tools:</strong> VS Code, Git</li>
+                        <li><strong>Hobbies:</strong> Coding, Gaming, Learning New Technologies</li>
+                        <li><strong>Career Goal:</strong> Software Engineer</li>
+                    </ul>
+                </div>
 
-    <footer>
-        <p>&copy; 2025 Ahmad Al Bukhari</p>
-    </footer>
+                <div class="biodata-item">
+                    <h3>📍 Location & Contact</h3>
+                    <ul>
+                        <li><strong>Alamat:</strong> Batam, Kepulauan Riau</li>
+                        <li><strong>Email:</strong> ahmadalbukhari3009@gmail.com</li>
+                        <li><strong>WhatsApp:</strong> +62 877-8301-0882</li>
+                        <li><strong>Instagram:</strong> @ahmdal_bkhri</li>
+                    </ul>
+                </div>
+
+                <div class="biodata-item">
+                    <h3>🎯 Future Plans</h3>
+                    <p>Saya berencana untuk terus mengembangkan kemampuan programming saya dan fokus pada pengembangan web. Target saya adalah menjadi seorang Software Engineer yang handal dan berkontribusi dalam dunia teknologi Indonesia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>My Skill</h2>
+            <div class="feature">
+                <h3>HTML</h3>
+                <p>HyperText Markup Language. Sebuah bahasa yang digunakan untuk menata gaya dan tampilan visual dokumen web, terutama yang ditulis dalam bahasa markup seperti HTML</p>
+            </div>
+            <div class="feature">
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets. Sebuah bahasa yang digunakan untuk menata gaya dan tampilan visual dokumen web, terutama yang ditulis dalam bahasa markup seperti HTML</p>
+            </div>
+            <div class="feature">
+                <h3>JavaScript</h3>
+                <p>bahasa skrip yang digunakan untuk membuat halaman web dinamis dan interaktif.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="feature">
+                <h3>Project 1</h3>
+                <p>Membuat Web profile.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="https://wa.me/87783010882" target="_blank">WhatsApp</a>
+                <a href="https://instagram.com/ahmdal_bkhri" target="_blank">Instagram</a>
+                <a href="ahmadalbukhari3009@gmail.com">Email</a>
+            </div>
+            <form>
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn">Sumbit</button>
+            </form>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
